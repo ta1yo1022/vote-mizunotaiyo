@@ -70,10 +70,6 @@ export default function Home() {
               color: "#22d3ee",
             }}
           >
-            <span
-              className="w-2 h-2 rounded-full animate-pulse"
-              style={{ background: "#22d3ee" }}
-            />
             奈良女子大学附属中等教育学校 副生徒会長立候補 | 水野 太陽
           </div>
 
@@ -95,17 +91,6 @@ export default function Home() {
             </span>
             に変える。
           </h1>
-
-          <p
-            className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            ただの「便利屋」ではありません。
-            <br />
-            あなたの声をプロレベルの文書に昇華させ、
-            <br />
-            学校当局から正式な回答を勝ち取るまで完遂します。
-          </p>
 
           <div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up"
@@ -152,6 +137,13 @@ export default function Home() {
               政策を見る
             </a>
           </div>
+
+          <p
+            className="text-xs text-slate-600 mt-6 animate-fade-in-up"
+            style={{ animationDelay: "0.4s" }}
+          >
+            このサイトはGeminiによって作成されました
+          </p>
         </div>
       </div>
 
@@ -163,9 +155,6 @@ export default function Home() {
             　＝
             <span style={{ color: "#22d3ee" }}>100% 企画書化</span>
           </h2>
-          <p className="text-slate-400 mt-4 text-lg">
-            雑用係ではありません。あなたの声を「学校を変える武器」にする専門家です。
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -173,13 +162,13 @@ export default function Home() {
             {
               icon: <MessageCircle className="w-10 h-10" style={{ color: "#22d3ee" }} />,
               title: "1. 拾う",
-              desc: "どんなに小さな不満や呟きも逃しません。SNS、目安箱、直接の声、すべてが変革の種です。",
+              desc: "どんなに小さな不満や呟きも逃しません。目安箱、直接の声、すべてが変革の種です。",
               featured: false,
             },
             {
               icon: <FileCheck className="w-10 h-10" style={{ color: "#22d3ee" }} />,
               title: "2. 仕立てる",
-              desc: "感情的な意見を、論理的で説得力のある「行政文書レベルの企画書」へと私が責任を持って編集します。",
+              desc: "意見を、論理的で説得力のある「企画書」へと私が責任を持って編集します。",
               featured: true,
             },
             {
@@ -239,15 +228,6 @@ export default function Home() {
       <section id="policy" className="py-20 px-4 md:px-8 max-w-7xl mx-auto" style={{ background: "rgba(15, 23, 42, 0.5)" }}>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div
-              className="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider uppercase rounded-full"
-              style={{
-                color: "#22d3ee",
-                border: "1px solid rgba(6, 182, 212, 0.3)",
-              }}
-            >
-              Key Policy
-            </div>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
               電子決済の実証実験を
               <br />
@@ -256,89 +236,9 @@ export default function Home() {
             <p className="text-slate-300 text-lg mb-6 leading-relaxed">
               前期生徒会での活動により、電子決済の実証実験は確定しました。しかし、これはゴールではありません。
               実証実験を実現するには、決済端末などの<strong className="text-white">機材の準備</strong>や、
-              それに伴う<strong className="text-white">予算の確保・適切な管理</strong>が不可欠です。
+              それに伴う<strong className="text-white">来季の予算の確保・適切な管理</strong>が不可欠です。
               そのうえで最も重要なのは<strong className="text-white">「運用ルール」</strong>の確立です。
             </p>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <div
-                  className="mt-1 p-1 rounded"
-                  style={{ background: "rgba(8, 47, 73, 0.5)", color: "#22d3ee" }}
-                >
-                  <Lock size={16} />
-                </div>
-                <p className="text-slate-400">トラブルゼロを目指す厳格なセキュリティガイドラインの策定</p>
-              </li>
-              <li className="flex items-start gap-3">
-                <div
-                  className="mt-1 p-1 rounded"
-                  style={{ background: "rgba(8, 47, 73, 0.5)", color: "#22d3ee" }}
-                >
-                  <TrendingUp size={16} />
-                </div>
-                <p className="text-slate-400">実証実験データを詳細に分析し、永続的な導入へのロードマップを作成</p>
-              </li>
-              <li className="flex items-start gap-3">
-                <div
-                  className="mt-1 p-1 rounded"
-                  style={{ background: "rgba(8, 47, 73, 0.5)", color: "#22d3ee" }}
-                >
-                  <CreditCard size={16} />
-                </div>
-                <p className="text-slate-400">透明性の高い会計処理フローの構築</p>
-              </li>
-            </ul>
-          </div>
-
-          <div className="relative">
-            <div
-              className="absolute inset-0 rounded-2xl blur-2xl opacity-20"
-              style={{
-                background: "linear-gradient(to right, #06b6d4, #2563eb)",
-              }}
-            />
-            <div
-              className="relative rounded-2xl p-8 shadow-2xl"
-              style={{
-                background: "#0f172a",
-                border: "1px solid #334155",
-              }}
-            >
-              <div
-                className="flex justify-between items-center mb-8 pb-4"
-                style={{ borderBottom: "1px solid #334155" }}
-              >
-                <div className="w-12 h-8 rounded" style={{ background: "#334155" }} />
-                <div className="text-slate-500 font-mono text-xs">ID: 8829-1029</div>
-              </div>
-              <div className="space-y-4">
-                <div
-                  className="h-4 rounded w-3/4 animate-pulse"
-                  style={{ background: "rgba(51, 65, 85, 0.5)" }}
-                />
-                <div
-                  className="h-4 rounded w-1/2 animate-pulse"
-                  style={{ background: "rgba(51, 65, 85, 0.5)", animationDelay: "0.2s" }}
-                />
-                <div
-                  className="h-20 rounded flex items-center justify-center font-mono"
-                  style={{
-                    background: "rgba(8, 47, 73, 0.2)",
-                    border: "1px solid rgba(6, 182, 212, 0.3)",
-                    color: "#22d3ee",
-                  }}
-                >
-                  System Status: PROTOTYPE READY
-                </div>
-              </div>
-              <div
-                className="mt-8 pt-4 flex justify-between items-center"
-                style={{ borderTop: "1px solid #334155" }}
-              >
-                <span className="text-xs text-slate-400">BUDGET CONTROL</span>
-                <span className="font-bold" style={{ color: "#22d3ee" }}>OPTIMIZED</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
